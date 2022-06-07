@@ -2,9 +2,13 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  template: `
+  <ul>
+    <li><a routerLink="./first">first</a></li>
+    <li><a routerLink="./second">second</a></li>
+  </ul>
+  <router-outlet></router-outlet>
+  `
 })
 export class AppComponent {
-  title = 'angular-output-bug';
 }
